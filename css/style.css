@@ -6,12 +6,10 @@ is
 a comment! */
 
 /* CSS Syntax:
-
 selector {
   property: value;
   property: value;
 }
-
 */
 
 /* Type selector */
@@ -71,12 +69,7 @@ figcaption {
   color: red;
 }
 
-/*/////////// MEDIA ///////////*/
-img, video, audio {
-  max-width: 100%;
-}
-
-/*/////////// LAYOUT ///////////*/
+/*////////// LAYOUT //////////*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -87,6 +80,7 @@ img, video, audio {
 .wrapper {
   width: 960px;
   margin: 0 auto;
+
 }
 
 .col-1 {
@@ -102,10 +96,18 @@ img, video, audio {
 }
 
 .col-3 {
-  background: #ccc;
+ background: #ccc;
 }
 
-.clearfix:after{
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.clearfix:after {
   content: ".";
   display: block;
   clear: both;
@@ -114,15 +116,16 @@ img, video, audio {
   line-height: 0;
 }
 
-[class *= "col-"] {
-  margin-left: 2%
+img, video, audio {
+  max-width: 100%;
 }
 
-.first {
-  margin-left: 0%
-}
+/*///////// SECTIONS /////////*/
 
-/*/////////// SECTION ///////////*/
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
 header {
   position: fixed;
@@ -133,12 +136,7 @@ header {
   z-index: 1;
 }
 
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-/*/////////// SOCIAL ///////////*/
+/*////////// SOCIAL //////////*/
 
 #social {
   position: fixed;
@@ -148,9 +146,8 @@ section {
   z-index: 1;
 }
 
-#social a {
+#social  a {
   display: block;
   width: 40px;
   height: 40px;
-  background: yellow;
-}
+back
